@@ -9,13 +9,20 @@
     --full-height: 100vh;
     --dark-bg: rgb(32, 32, 32);
     --dark-color: rgb(192, 192, 192);
+    --light-bg: rgb(221, 221, 221);
+    --light-color: rgb(36, 35, 35);
     --sidebar-bg: rgb(32, 32, 32);
     --heading1: rgb(206, 206, 206);
+    --heading1-light: rgb(29, 29, 29);
     --sidebar-bordercolor: rgb(44, 44, 44);
+    --guild-detail-bg: rgb(36, 34, 34);
+    --sidebar-bordercolor-light: rgb(247, 239, 239);
 }
 body {
     display: flex;
     justify-content: right;
+    background-color: white;
+    color: black;
     font-family: var(--gernal-font);
 }
 .container {
@@ -92,11 +99,11 @@ main p {
 }
 .img2 {
     top: 1em;
-    right: 3em;
+    right: 1.6em;
 }
 .img3 {
     top: 30em;
-    right: 3em;
+    right: 1.6em;
 }
 .img4 {
     top: 30em;
@@ -157,4 +164,113 @@ main p {
     border-radius: 3em;
     color: rgb(51, 49, 49);
     border: 2px solid rgb(90, 33, 33);
+}
+.guild {
+    padding-bottom: 12em;
+}
+.card-container {
+    column-gap: 2em;
+    row-gap: 11em;
+}
+.guild-detaills {
+    background-color: var(--guild-detail-bg);
+    position: relative;
+    height: 33em;
+    border-radius: 1em;
+    flex-direction: column;
+    padding: 2em;
+    border: 5px solid rgb(39, 39, 39);
+}
+.guild-img {
+    /* margin-top: -13em; */
+    width: 18em;
+    position: absolute;
+    top: -10.2em;
+}
+.name-guild {
+    margin-top: 1.7em;
+    margin-bottom: 1em;
+}
+.guild2 {
+    width: 10em;
+}
+.guild3 {
+    top: -6em;
+}
+.guild4 {
+    top: -5em;
+}
+.guild5 {
+    top: -8em;
+}
+.guild8{
+    top: -7.5em;
+}
+.guild9 {
+    top: -12em;
+}
+.guild-detaill10 {
+    height: 40em;
+}
+.guild6 {
+    top: -10em;
+    width: 15em;
+}
+.theme {
+    position: fixed;
+    right: 1em;
+    top: 40%;
+    padding: 0px 0.9em;
+    padding-top: 1em;
+    padding-bottom: 3.5em;
+    border-radius: 50%;
+}
+.dark-mode {
+    position: fixed;
+    right: 3.5em;
+    top: 20.28em;
+    opacity: 1;
+    accent-color: black;
+    z-index: 3;
+}
+.light-mode {
+    position: fixed;
+    right: 3.5em;
+    top: 21.8em;
+    z-index: 3;
+    accent-color: black;
+}
+.mode {
+    position: fixed;
+    right: 4.8em;
+    top: 20em;
+}
+#light-mode:checked ~.container{
+    background-color: var(--light-bg);
+    color: var(--light-color);
+}
+#light-mode:checked ~.container .side-bar {
+    background-color: var(--light-bg);
+    color: var(--light-color);
+    text-shadow: 3px 3px rgb(253, 251, 251);
+}
+#light-mode:checked ~.container .side-bar div {
+    border-top: 2px solid var(--sidebar-bordercolor-light);
+    border-right: 5px solid var(--sidebar-bordercolor-light);
+    border-left: 6px solid var(--sidebar-bordercolor-light);
+}
+#light-mode:checked ~.container .side-bar div:hover {
+    background-color: var(--sidebar-bordercolor-light);
+    font-size: 1.2em;
+}
+#light-mode:checked ~ .container main h1 {
+    color: var(--heading1-light);
+}
+#light-mode:checked ~ .container main .note {
+    background-color: rgb(253, 202, 202);
+    border: 3px solid rgb(245, 226, 226);
+}
+#light-mode:checked ~ .container main .guild-detaills{
+    background-color: rgb(243, 242, 242);
+    border: 5px solid rgb(223, 219, 219);
 }

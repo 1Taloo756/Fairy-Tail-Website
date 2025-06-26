@@ -302,7 +302,84 @@ Org was one of the older members of the Magic Council and held a Wizard Saint ti
 <img class="character-info2" src="images/org info1.webp">
 </div>
 `;
-let guilds=``;
+let guilds=`
+<div class="flex justify-center items-center">
+    <h1 class="intro font-bold text-4xl">Guilds</h1>
+</div>
+<p class="text-center text-1xl guild">In Fairy Tail, guilds are magical groups where wizards come together to take on jobs, train, and support one another. Each guild is led by a Guild Master and works under the rules of the Magic Council. Guilds are like families for mages and play a big role in their lives, offering friendship, protection, and purpose.</p>
+<div class="card-container grid grid-cols-2">
+<div class="flex guild-detaills items-center">
+<img class="guild-img" src="images/guild1.png" >
+<h1 class="font-bold text-3xl name-guild">Fairy Tail</h1>
+<p class="text-center">
+Fairy Tail is the main guild of the series and one of the most powerful and chaotic in Fiore. It is known for its strong mages like Natsu Dragneel, Erza Scarlet, Gray Fullbuster, and Lucy Heartfilia, as well as its values of friendship, loyalty, and family. Though its members are often reckless and destructive, they are fiercely protective of one another and fight for justice and love. The guild’s longtime master is Makarov Dreyar, who treats all members like his children.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img guild2" src="images/guild2.png" >
+<h1 class="font-bold text-3xl name-guild">Sabertooth</h1>
+<p class="text-center">
+Sabertooth was once the strongest guild in Fiore, known for its cold and ruthless philosophy — where only the strongest had value. Led by Jiemma, the guild was feared and respected. However, after being defeated by Fairy Tail in the Grand Magic Games, the guild changed under the leadership of Sting Eucliffe, one of its Dragon Slayers. The guild became more open, caring, and loyal. Its notable members include Rogue Cheney, Minerva Orland, and Yukino Agria.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img guild3" src="images/guild3.png" >
+<h1 class="font-bold text-3xl name-guild">Lamia Scale</h1>
+<p class="text-center">
+Lamia Scale is one of the top legal guilds in Fiore, known for its strength, discipline, and powerful wizards. It is home to Jura Neekis, one of the Ten Wizard Saints, and Lyon Vastia, who was once Gray’s rival and Ur’s other student. The guild often takes part in official magic events and is highly respected. It also supported Fairy Tail during the Grand Magic Games and the battle against dark guilds.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img guild4" src="images/guild4.png" >
+<h1 class="font-bold text-3xl name-guild">Blue Pegasus</h1>
+<p class="text-center">
+Blue Pegasus is a legal guild known for its charm, elegance, and beauty — both in appearance and magic. Its most famous members are the Trimen: Hibiki, Ren, and Eve, as well as the hilarious and oddly powerful Ichiya Vandalay Kotobuki. While they may act silly or overly dramatic, Blue Pegasus shows bravery and loyalty in serious battles, such as during the war against Oración Seis and the fight with Tartaros.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img guild5" src="images/guild5.png" >
+<h1 class="font-bold text-3xl name-guild">Mermaid Heel</h1>
+<p class="text-center">
+Mermaid Heel is an all-female guild that is both elegant and deadly. Its most famous member is Kagura Mikazuchi, a powerful swordswoman who rarely unsheathes her blade due to a personal vow. The guild’s members are known for their strong bond and fighting skill. Mermaid Heel is one of the few guilds that competed against Fairy Tail in the Grand Magic Games and earned much respect.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img guild6" src="images/guild6.png" >
+<h1 class="font-bold text-3xl name-guild">Grimoire Heart</h1>
+<p class="text-center">
+Grimoire Heart is a powerful dark guild and one of the three that form the Balam Alliance, a group of evil guilds. It was led by Hades, the former Fairy Tail master Purehito, who turned to darkness in search of Zeref, the black wizard. Grimoire Heart sought to awaken Zeref and create a world ruled by chaos and darkness. Its members, such as Ultear Milkovich and the Seven Kin of Purgatory, were among the most feared in the series.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img" src="images/guild7.png" >
+<h1 class="font-bold text-3xl name-guild">Tartaros</h1>
+<p class="text-center">
+Tartaros is the most dangerous of the dark guilds and is composed entirely of Etherious demons created by Zeref. The guild’s goal was to activate Face, a weapon that could wipe out all magic from the continent. Led by Mard Geer, Tartaros unleashed terror on the Magic Council and guilds alike. They were eventually defeated in a full-scale battle by Fairy Tail, but not without great losses. Tartaros posed one of the biggest threats in the entire series.
+</p>
+</div>
+<div class="flex guild-detaills items-center">
+<img class="guild-img guild8" src="images/guild8.png" >
+<h1 class="font-bold text-3xl name-guild">Raven Tail</h1>
+<p class="text-center">
+Raven Tail was founded by Ivan Dreyar, the son of Makarov, out of hatred and revenge against Fairy Tail. Though it was registered as a legal guild, Raven Tail operated in secret as a dark guild, using underhanded tactics and dark magic. The guild was revealed during the Grand Magic Games and was later disbanded after its illegal activities were exposed. Ivan’s grudge made Raven Tail one of Fairy Tail’s most personal enemies.
+</p>
+</div>
+<div class="flex guild-detaills guild-detaill9 items-center">
+<img class="guild-img guild9" src="images/guild9.png" >
+<h1 class="font-bold text-3xl name-guild">Crime Sorcière</h1>
+<p class="text-center">
+Crime Sorcière is an independent guild formed by former dark mages seeking redemption. It was created by Jellal Fernandes, along with Ultear Milkovich and Meredy, after they turned away from their dark paths. Their goal is to destroy dark guilds and stop the spread of evil magic without interference from the Magic Council. Though not a legal guild, they act as silent protectors of peace. They helped Fairy Tail during key battles against Zeref and other threats.
+</p>
+</div>
+<div class="flex guild-detaills guild-detaill10 items-center">
+<img class="guild-img" src="images/guild10.png" >
+<h1 class="font-bold text-3xl name-guild">Twilight Ogre</h1>
+<p class="text-center">
+Twilight Ogre is a small, legal guild based in Magnolia, the same town as Fairy Tail. Though not very powerful, the guild became arrogant and greedy during the time Fairy Tail was disbanded for seven years after the Tenrou Island incident. They took advantage of Fairy Tail’s absence and demanded payment from the weakened guild when its members returned. Led by a rude and boastful man named Banaboster, Twilight Ogre tried to act tough but was quickly humbled when Fairy Tail returned to full strength. They serve as a minor but memorable example of how some guilds misuse their status.
+</p>
+</div>
+</div>
+`;
 document.querySelector('.about').addEventListener('click' ,()=>{
     document.querySelector('main').innerHTML=about;
 });
@@ -315,3 +392,13 @@ document.querySelector('.tenwizardsaints').addEventListener('click' ,()=>{
 document.querySelector('.guilds').addEventListener('click' ,()=>{
     document.querySelector('main').innerHTML=guilds;
 });
+let mode=localStorage.getItem('Theme')||'dark-mode';
+document.querySelector('.light-mode').addEventListener('click', ()=>{
+    mode='light-mode';
+    localStorage.setItem('Theme', mode);
+});
+document.querySelector('.dark-mode').addEventListener('click', ()=>{
+    mode='dark-mode';
+    localStorage.setItem('Theme', mode);
+});
+document.getElementById(`${mode}`).checked= true;

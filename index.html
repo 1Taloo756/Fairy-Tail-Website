@@ -19,8 +19,16 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <title>Fairy Tail</title>
     </head>
-    <body>
+    <body>dark
+        <input type="radio" class="dark-mode"  id="dark-mode" name="mode" checked>
+        <input type="radio" class="light-mode" id="light-mode" name="mode" >
         <div class="container">
+            <div class="theme font-bold text-2xl">Theme</div>
+            <div class="mode">
+                <label class="dark" for="dark-mode">Dark</label>
+                <br>
+                <label class="light" for="light-mode">Light</label>
+            </div>
             <div class="side-bar fixed flex flex-col">
                 <div class="div1 about flex justify-center items-center">About</div>
                 <div class="div2 characters flex justify-center items-center">Characters</div>
