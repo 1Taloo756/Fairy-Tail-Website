@@ -1,43 +1,43 @@
 let about=`
-                <h1 class="intro font-bold text-3xl">Introduction :</h1>
-                <div class="flex intro-part">
-                    <p class="text-center">Fairy Tail is a Japanese manga series, written and illustrated by Hiro Mashima, which was serialized weekly in Weekly Shonen Magazine starting August 2, 2006.It is a Japanese manga series, later adapted into an anime, that follows the adventures of a young wizard named Lucy Heartfilia as she joins the rambunctious wizard guild, Fairy Tail.The series is known for its blend of action, comedy, and heartwarming themes of friendship and camaraderie among guild members. </p>
-                    <div class="images grid grid-cols-2">
-                        <img class="gallery-img" src="images/intro 1.jpg">
-                        <img class="gallery-img" src="images/intro 2.jpg">
-                        <img class="gallery-img" src="images/intro 3.jpg">
-                        <img class="gallery-img" src="images/intro 4.jpg">
-                        <img class="gallery-img" src="images/intro 5.jpg">
-                        <img class="gallery-img" src="images/intro 6.jpg">
-                    </div>
+            <h1 class="intro font-bold text-3xl">Introduction :</h1>
+            <div class="flex intro-part">
+                <p class="text-center">Fairy Tail is a Japanese manga series, written and illustrated by Hiro Mashima, which was serialized weekly in Weekly Shonen Magazine starting August 2, 2006.It is a Japanese manga series, later adapted into an anime, that follows the adventures of a young wizard named Lucy Heartfilia as she joins the rambunctious wizard guild, Fairy Tail.The series is known for its blend of action, comedy, and heartwarming themes of friendship and camaraderie among guild members. </p>
+                <div class="images grid grid-cols-2">
+                    <img class="gallery-img" src="images/intro 1.jpg">
+                    <img class="gallery-img" src="images/intro 2.jpg">
+                    <img class="gallery-img" src="images/intro 3.jpg">
+                    <img class="gallery-img" src="images/intro 4.jpg">
+                    <img class="gallery-img" src="images/intro 5.jpg">
+                    <img class="gallery-img" src="images/intro 6.jpg">
                 </div>
-                <h1 class="intro story font-bold text-3xl">Main Plot Summary :</h1>
-                <div class="flex story-part">
-                    <p class="text-center">Fairy Tail follows the adventures of Natsu Dragneel, a fire dragon slayer wizard from the powerful and chaotic wizard guild called Fairy Tail, as he searches for his adoptive dragon father, Igneel. Along the way, he teams up with Lucy Heartfilia (a celestial spirit mage), Happy (a flying cat), Gray Fullbuster (an ice mage), and Erza Scarlet (an armored knight-mage), among others.Together, they take on powerful enemies, protect their guild, and uncover ancient secrets of the magical world.</p>
-                    <div class="images grid grid-cols-2">
-                        <img class="main-img" src="images/character 1.jpg">
-                        <img class="main-img" src="images/character 2.jpg">
-                        <img class="main-img" src="images/character 3.jpg">
-                        <img class="main-img" src="images/character 4.jpg">
-                    </div>
+            </div>
+            <h1 class="intro story font-bold text-3xl">Main Plot Summary :</h1>
+            <div class="flex story-part">
+                <p class="text-center">Fairy Tail follows the adventures of Natsu Dragneel, a fire dragon slayer wizard from the powerful and chaotic wizard guild called Fairy Tail, as he searches for his adoptive dragon father, Igneel. Along the way, he teams up with Lucy Heartfilia (a celestial spirit mage), Happy (a flying cat), Gray Fullbuster (an ice mage), and Erza Scarlet (an armored knight-mage), among others.Together, they take on powerful enemies, protect their guild, and uncover ancient secrets of the magical world.</p>
+                <div class="images grid grid-cols-2">
+                    <img class="main-img" src="images/character 1.jpg">
+                    <img class="main-img" src="images/character 2.jpg">
+                    <img class="main-img" src="images/character 3.jpg">
+                    <img class="main-img" src="images/character 4.jpg">
                 </div>
-                <h1 class="intro story font-bold text-3xl">Fights in Fairy Tail: Magic Battles with Heart :</h1>
-                <div class="flex fight-part">
-                    <p class="text-center">The fights in Fairy Tail are more than just magical showdowns—they are filled with emotion, character growth, and deep personal meaning. Each battle reflects the inner struggles of the characters, often turning into moments of transformation or revelation. The magic system allows for diverse combat styles—from Natsu’s fiery close-range attacks to Erza’s armored swordplay and Gray’s creative ice techniques. Fights usually occur during major arcs such as guild wars, tournaments, or when dark guilds threaten the peace. Notable battles include Natsu vs. Gajeel, Erza vs. Azuma, Gray vs. Silver, and the final epic war against Zeref and Acnologia. What makes these fights stand out is the way characters draw strength from their friends, memories, and determination to protect what they love. Victory often comes not from being stronger, but from having the will to never give up.</p>
-                    <div class="images grid grid-cols-2">
-                        <img class="fight-img" src="images/fight 1.jpg">
-                        <img class="fight-img" src="images/fight 3.jpg">
-                        <img class="fight-img" src="images/fight 2.jpg">
-                        <img class="fight-img" src="images/fight 6.jpg">
-                        <img class="fight-img" src="images/fight 5.jpg">
-                        <img class="fight-img" src="images/fight 4.jpg">
-                        <img class="fight-img" src="images/fight 7.jpg">
-                        <img class="fight-img" src="images/fight 8.jpg">
-                    </div>
+            </div>
+            <h1 class="intro story font-bold text-3xl">Fights in Fairy Tail: Magic Battles with Heart :</h1>
+            <div class="flex fight-part">
+                <p class="text-center">The fights in Fairy Tail are more than just magical showdowns—they are filled with emotion, character growth, and deep personal meaning. Each battle reflects the inner struggles of the characters, often turning into moments of transformation or revelation. The magic system allows for diverse combat styles—from Natsu’s fiery close-range attacks to Erza’s armored swordplay and Gray’s creative ice techniques. Fights usually occur during major arcs such as guild wars, tournaments, or when dark guilds threaten the peace. Notable battles include Natsu vs. Gajeel, Erza vs. Azuma, Gray vs. Silver, and the final epic war against Zeref and Acnologia. What makes these fights stand out is the way characters draw strength from their friends, memories, and determination to protect what they love. Victory often comes not from being stronger, but from having the will to never give up.</p>
+                <div class="images grid grid-cols-2">
+                    <img class="fight-img" src="images/fight 1.jpg">
+                    <img class="fight-img" src="images/fight 3.jpg">
+                    <img class="fight-img" src="images/fight 2.jpg">
+                    <img class="fight-img" src="images/fight 6.jpg">
+                    <img class="fight-img" src="images/fight 5.jpg">
+                    <img class="fight-img" src="images/fight 4.jpg">
+                    <img class="fight-img" src="images/fight 7.jpg">
+                    <img class="fight-img" src="images/fight 8.jpg">
                 </div>
+            </div>
 `;
 let characters=`
-<div class="flex justify-center items-center">
+<div class="character-heading flex justify-center items-center">
     <h1 class="intro font-bold text-4xl">Main Characters</h1>
 </div>
 <h1 class="intro font-bold text-3xl">Natsu Dragneel</h1>
@@ -212,7 +212,7 @@ Zeref is the main antagonist for much of the series and the creator of many demo
 </div>
 `;
 let tenwizardsaints=`
-<div class="flex justify-center items-center">
+<div class="tenwizardsaints-heading flex justify-center items-center">
     <h1 class="intro font-bold text-4xl">Wizard Saints</h1>
 </div>
 <p class="text-center space-blow">The Ten Wizard Saints are the strongest legal mages in Ishgar, chosen by the Magic Council. The top four are called the Four Gods of Ishgar. Famous members include Makarov, Warrod, Wolfheim, and Hyberion. They are known for their great magic and are respected all over the continent.</p>
@@ -281,7 +281,7 @@ Jose Porla was the Guild Master of Phantom Lord and was once one of the Ten Wiza
 <img class="character-info2" src="images/jose info1.jpg">
 </div>
 <div class="flex justify-center items-center note">
-    <h1 class="intro font-semibold text-1xl text-center">❗ Note: The other Wizard Saints are either unnamed or not detailed in the anime/manga. Several spots are also left “empty” or filled by weaker mages as honorary positions by the Magic Council — meaning not all 10 are equal in power.
+    <h1 class="intro font-semibold text-1xl text-center">Note: The other Wizard Saints are either unnamed or not detailed in the anime/manga. Several spots are also left “empty” or filled by weaker mages as honorary positions by the Magic Council — meaning not all 10 are equal in power.
 
 </h1>
 </div>
@@ -303,7 +303,7 @@ Org was one of the older members of the Magic Council and held a Wizard Saint ti
 </div>
 `;
 let guilds=`
-<div class="flex justify-center items-center">
+<div class="guild-heading flex justify-center items-center">
     <h1 class="intro font-bold text-4xl">Guilds</h1>
 </div>
 <p class="text-center text-1xl guild">In Fairy Tail, guilds are magical groups where wizards come together to take on jobs, train, and support one another. Each guild is led by a Guild Master and works under the rules of the Magic Council. Guilds are like families for mages and play a big role in their lives, offering friendship, protection, and purpose.</p>
@@ -351,7 +351,7 @@ Grimoire Heart is a powerful dark guild and one of the three that form the Balam
 </p>
 </div>
 <div class="flex guild-detaills items-center">
-<img class="guild-img" src="images/guild7.png" >
+<img class="guild-img guild7" src="images/guild7.png" >
 <h1 class="font-bold text-3xl name-guild">Tartaros</h1>
 <p class="text-center">
 Tartaros is the most dangerous of the dark guilds and is composed entirely of Etherious demons created by Zeref. The guild’s goal was to activate Face, a weapon that could wipe out all magic from the continent. Led by Mard Geer, Tartaros unleashed terror on the Magic Council and guilds alike. They were eventually defeated in a full-scale battle by Fairy Tail, but not without great losses. Tartaros posed one of the biggest threats in the entire series.
@@ -380,17 +380,242 @@ Twilight Ogre is a small, legal guild based in Magnolia, the same town as Fairy 
 </div>
 </div>
 `;
+let season= `
+<div class="season-heading flex justify-center items-center">
+    <h1 class="intro font-bold text-4xl">Seasons</h1>
+</div>
+<div class="season-container grid grid-cols-1">
+<div class="seasons-detaill flex items-center flex-col">
+<h1 class="intro font-bold text-3xl">All Seasons</h1>
+<div class="season-name-container grid grid-cols-2">
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img1.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (Season 1)</p>
+<button class="add-watch-list-btn" id='btn-1' data-name="Fairy Tail (Season 1)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img2.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (Season 2)</p>
+<button class="add-watch-list-btn" id='btn-2' data-name="Fairy Tail (Season 2)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex  flex-col items-center">
+<img src="images/season-img3.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (Season 3)</p>
+<button class="add-watch-list-btn" id='btn-3' data-name="Fairy Tail (Season 3)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img4.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (Season 4)</p>
+<button class="add-watch-list-btn" id='btn-4' data-name="Fairy Tail (Season 4)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img5.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (Season 5) <br> (Mostly filler)</p>
+<button class="add-watch-list-btn" id='btn-5' data-name="Fairy Tail (Season 5)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img6.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (Season 6)</p>
+<button class="add-watch-list-btn" id='btn-6' data-name="Fairy Tail (Season 6)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img7.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (2014) / Season 7</p>
+<button class="add-watch-list-btn" id='btn-7' data-name="Fairy Tail (2014) / Season 7">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img8.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail (2014) / Season 8</p>
+<button class="add-watch-list-btn" id='btn-8' data-name="Fairy Tail (2014) / Season 8">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img9.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail Zero / Season 9 <br> (part 1)</p>
+<button class="add-watch-list-btn" id='btn-9' data-name="Fairy Tail Zero / Season 9 (part 1)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-img10.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail: Final Season / Season 9 <br> (part 2)</p>
+<button class="add-watch-list-btn text-center" id='btn-10' data-name="Final Season / Season 9 (part 2)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-imgm.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail the Movie: Phoenix <br> Priestess (2012)</p>
+<button class="add-watch-list-btn" id='btn-11' data-name="Fairy Tail the Movie: Phoenix Priestess (2012)">Add to Watch List</button>
+</div>
+<div class="season-name-list flex flex-col items-center">
+<img src="images/season-imgm1.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail: Dragon Cry <br> (2017)</p>
+<button class="add-watch-list-btn" id='btn-12' data-name="Fairy Tail: Dragon Cry (2017)">Add to Watch List</button>
+</div>
+<div class="season-name-list space-left-season-list flex flex-col items-center">
+<img src="images/season-img100.jpeg" class="season-img">
+<p class="font-bold text-2xl">Fairy Tail: 100 Years Quest <br> (2024–)</p>
+<button class="add-watch-list-btn" id='btn-13' data-name="Fairy Tail: 100 Years Quest (2024–)">Add to Watch List</button>
+</div>
+</div>
+</div>
+<div class="My-list flex items-center flex-col">
+<h1 class="intro font-bold text-3xl">My Watch List</h1>
+<div class="season-name-list-container">
+</div>
+</div>
+</div>
+`;
+let seasonNameid= JSON.parse(localStorage.getItem("seasonNameid"))||[];
+let seasonName= JSON.parse(localStorage.getItem("seasonName"))||[];
+let watchedid= JSON.parse(localStorage.getItem("watchedid"))||[];
+let hour= 5;
+let min= 30;
+let sec= 0;
+let newReleases=`
+<div class="new-release-heading flex justify-center items-center"><h1 class="intro font-bold text-4xl">New Releases</h1></div>
+<h1 class="info-heading intro font-bold text-3xl">Fairy Tail 100 Years Quest :</h1>
+<div class="new-release-info text-center flex">
+<p class="text-center">
+Fairy Tail: 100 Years Quest is just 5 hours and 30 minutes away, and the adventure is about to ignite once more. Natsu, Lucy, Erza, Gray, Wendy, Happy, and Carla return to take on the legendary 100 Years Quest—a mission so dangerous that no mage has ever completed it in over a century. Their journey leads them to the continent of Guiltina, where they must face the Five Dragon Gods, beings so powerful even Acnologia feared them. Along the way, they encounter new guilds, powerful allies, and dark enemies, including Touka, a mysterious girl connected to a terrifying force, and Selene, the ruthless and unpredictable Moon Dragon God. As battles intensify and emotions run deep, the bonds between Fairy Tail’s members will be pushed to the absolute limit. Each character faces unique challenges—Erza clashes with equally powerful warriors, Gray confronts his inner darkness, and Lucy’s celestial spirit magic begins to evolve in unexpected ways. With beautiful animation, high-stakes action, breathtaking visuals, powerful soundtracks, and the heart of the original series fully alive, this sequel promises to deliver unforgettable moments for old and new fans alike. The countdown has begun—get ready to witness the return of magic, friendship, courage, and fire like never before. Fairy Tail is back, and the flame is about to burn brighter than ever!
+</p>
+<div class="new-release-images-container grid grid-cols-2">
+<img class="new-release-image" src="images/new-release-img1.jpg">
+<img class="new-release-image" src="images/new-release-img2.jpg">
+<img class="new-release-image margin-top" src="images/new-release-img3.jpg">
+<img class="new-release-image margin-top" src="images/new-release-img5.jpg">
+<img class="new-release-image margin-top" src="images/new-release-img8.jpg">
+<img class="new-release-image margin-top" src="images/new-release-img9.jpg">
+
+</div>
+
+</div>
+<h1 class="intro font-bold text-3xl">This season release in </h1>
+<div class="timmer font-bold text-6xl flex justify-center items-center" id="timmer">
+${hour} hour : ${min} min : ${sec} sec</div>
+<h1 class="info-heading intro font-bold text-3xl">Watch Trailor :</h1>
+<div class="text-center trailer-detaill">Fairy Tail: 100 Years Quest explodes into action as Natsu and his team take on a mission no mage has ever completed! From facing the legendary Five Dragon Gods to unlocking ancient powers and uncovering dark secrets, this new journey is filled with intense battles, powerful magic, and unforgettable moments. With jaw-dropping animation and the entire Fairy Tail crew back in action, the adventure reaches a whole new level. Watch the official trailer now and dive into the magic of 100 Years Quest!</div>
+<div class="flex justify-center items-center link-container"><a class="link-trailer" href="http://youtube.com/watch?v=n2ksbv94ONo" target="_blank">Click here</a></div>
+`;
+let contact=`
+<div class="contact flex justify-center items-center"><h1 class="intro font-bold 
+text-4xl">Contact us</h1></div>
+<foam>
+<div class="foam">
+<label for="name" class="font-bold text-1xl">Name :</label>
+<br>
+<input id="name" class="input name" type="text" placeholder="Name" name="name" required>
+<label for="name" class="label2 font-bold text-1xl">Email :</label>
+<input id="email" class="input email" type="email" placeholder="Email" email="email" required>
+<br>
+<label for="name" class="font-bold text-1xl">Message :</label>
+<br>
+<textarea id="message" class="textarea" type="textarea" rows="5" placeholder="Message" message="message" required></textarea>
+<br>
+<button class="submit-btn">Submit<button>
+</div>
+</foam>
+`;
+let information={
+    name: JSON.parse(localStorage.getItem("name"))||[],
+    email: JSON.parse(localStorage.getItem("email"))||[],
+    message: JSON.parse(localStorage.getItem("message"))||[]
+}
+document.querySelector('.Contact').addEventListener('click' ,()=>{
+    document.querySelector('main').innerHTML=contact;
+    clearInterval(id);
+    document.querySelector('.submit-btn').addEventListener('click', ()=>{
+        if(document.querySelector('.name').value&&document.querySelector('.textarea').value&&document.querySelector('.email').value){
+            information.name.push(document.querySelector('.name').value);
+            information.email.push(document.querySelector('.email').value);
+            information.message.push(document.querySelector('.textarea').value);
+            localStorage.setItem("name", JSON.stringify(information.name));
+            localStorage.setItem("email", JSON.stringify(information.email));
+            localStorage.setItem("message", JSON.stringify(information.message));
+            console.log(information);
+            
+
+        }else {
+            console.log(false);
+        }
+    });
+});
 document.querySelector('.about').addEventListener('click' ,()=>{
     document.querySelector('main').innerHTML=about;
+    clearInterval(id);
 });
 document.querySelector('.characters').addEventListener('click' ,()=>{
     document.querySelector('main').innerHTML=characters;
+    clearInterval(id);
 });
 document.querySelector('.tenwizardsaints').addEventListener('click' ,()=>{
     document.querySelector('main').innerHTML=tenwizardsaints;
+    clearInterval(id);
 });
 document.querySelector('.guilds').addEventListener('click' ,()=>{
     document.querySelector('main').innerHTML=guilds;
+    clearInterval(id);
+});
+document.querySelector('.season').addEventListener('click' ,()=>{
+    document.querySelector('main').innerHTML=season;
+    clearInterval(id);
+    if(seasonNameid){
+        seasonNameid.forEach((id)=>{
+            document.getElementById(`${id}`).outerHTML='<p class="added-list">Added<p>';
+        });
+    }
+    if(seasonName){
+        document.querySelector('.season-name-list-container').innerHTML=``;
+        seasonName.forEach((name)=>{
+            document.querySelector('.season-name-list-container').innerHTML+=`
+            <div class="season-name flex">
+            <p class="font-bold text-2xl" id="${name}-watch">${name}</p>
+            <button class="watch-btn" id="${name}-watchbtn" data-watchid='${name}'>Watch</button>
+            </div>
+            `;
+        });
+    }
+    if(watchedid){
+        watchedid.forEach((id)=>{
+            document.getElementById(`${id}-watch`).classList.add('name-s');
+            document.getElementById(`${id}-watchbtn`).outerHTML=`<button class="dull-btn" id="${id}-watchbtn" data-watchid='${id}'>Watched</button>`;
+            document.getElementById(`${id}-watchbtn`)
+        });
+    }
+    document.querySelectorAll('.watch-btn').forEach((button)=>{
+        button.addEventListener('click', ()=>{
+            document.getElementById(`${button.dataset.watchid}-watch`).classList.add('name-s');
+            document.getElementById(`${button.dataset.watchid}-watchbtn`).outerHTML=`<button class="dull-btn" id="${id}-watchbtn" data-watchid='${button.dataset.watchid}'>Watched</button>`;
+            watchedid.push(button.dataset.watchid);
+            localStorage.setItem("watchedid", JSON.stringify(watchedid));
+        });
+    });
+    if(document.querySelector('.season-name-list-container').innerHTML==``) {
+        document.querySelector('.season-name-list-container').innerHTML=`<p class="empty-p font-bold text-2xl">Empty</p>`;
+    }
+    document.querySelectorAll('.add-watch-list-btn').forEach((button)=>{
+    button.addEventListener('click', ()=>{
+        if(document.querySelector('.season-name-list-container').innerHTML==`<p class="empty-p font-bold text-2xl">Empty</p>`){
+            document.querySelector('.season-name-list-container').innerHTML='';
+        }
+        seasonNameid.push(button.id);
+        seasonName.push(button.dataset.name);
+        document.querySelector('.season-name-list-container').innerHTML+=`
+        <div class="season-name flex">
+        <p class="font-bold text-2xl" id="${button.dataset.name}-watch">${button.dataset.name}</p>
+        <button class="watch-btn" id="${button.dataset.name}-watchbtn" data-watchid='${button.dataset.name}'>Watch</button>
+        </div>
+        `;
+        document.querySelectorAll('.watch-btn').forEach((button)=>{
+            button.addEventListener('click', ()=>{
+                console.log(button.dataset.watchid);
+                document.getElementById(`${button.dataset.watchid}-watch`).classList.add('name-s');
+                watchedid.push(button.dataset.watchid);
+                document.getElementById(`${button.dataset.watchid}-watchbtn`).outerHTML=`<button class="dull-btn" id="${button.dataset.watchedid}-watchbtn" data-watchid='${button.dataset.watchedid}'>Watched</button>`;
+                localStorage.setItem("watchedid", JSON.stringify(watchedid));
+            });
+        });
+        localStorage.setItem("seasonName", JSON.stringify(seasonName));
+        localStorage.setItem("seasonNameid", JSON.stringify(seasonNameid));
+        document.getElementById(`${button.id}`).outerHTML='<p class="added-list">Added</p>';
+    });
+});
 });
 let mode=localStorage.getItem('Theme')||'dark-mode';
 document.querySelector('.light-mode').addEventListener('click', ()=>{
@@ -401,4 +626,34 @@ document.querySelector('.dark-mode').addEventListener('click', ()=>{
     mode='dark-mode';
     localStorage.setItem('Theme', mode);
 });
+let id;
 document.getElementById(`${mode}`).checked= true;
+document.querySelector('.new-releases').addEventListener('click' ,()=>{
+    document.querySelector('main').innerHTML=newReleases;
+    clearInterval(id);
+    hour= 5;
+    min= 30;
+    sec= 0;
+    id=setInterval(()=>{
+    if(sec>=0){
+        sec--;
+    }
+    if(sec==-1&&min>=0){
+        min--;
+        sec= 59;
+    }
+    if(min==-1&&hour>=0){
+        hour--;
+        min=59;
+        sec=59;
+    }
+    if(hour==-1){
+        clearInterval(id);
+        document.getElementById('timmer').innerHTML=`Time's up!`;
+    }
+    if (hour>=0){
+        document.querySelector('.timmer').innerHTML=`${hour} hour : ${min} min : ${sec} 
+    sec`;
+    }
+},1000);
+});

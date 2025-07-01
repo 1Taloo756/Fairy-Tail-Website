@@ -17,6 +17,13 @@
     --sidebar-bordercolor: rgb(44, 44, 44);
     --guild-detail-bg: rgb(36, 34, 34);
     --sidebar-bordercolor-light: rgb(247, 239, 239);
+    --trailer-link-color: rgb(226, 54, 54);
+    --trailer-link-hover-bg: rgb(56, 56, 56);
+    --trailer-link-bg: rgb(48, 48, 48);
+    --dark-season-menu: rgb(51, 51, 51);
+    --my-list-color-dark: rgb(94, 94, 94);
+    --linear-gradient: linear-gradient(to left ,rgb(235, 153, 2) ,rgb(226, 77, 58));
+    --linear-gradient1: linear-gradient(to right ,rgb(235, 153, 2) ,rgb(226, 77, 58));
 }
 body {
     display: flex;
@@ -41,7 +48,7 @@ h1 {
 header h1 {
     font-family: 'Merienda';
     color: transparent;
-    background-image: linear-gradient(to left ,rgb(235, 153, 2) ,rgb(226, 77, 58));
+    background-image: var(--linear-gradient);
     background-clip: text;
 }
 .logo {
@@ -69,7 +76,7 @@ header h1 {
     font-size: 1.2em;
 }
 main {
-    padding: 6.5em 0px;
+    padding: 3.5em 0px;
     width: 69%;
     margin: auto;
 }
@@ -116,11 +123,11 @@ main p {
     padding-right: 5em;
 }
 .intro-part {
-    margin-bottom: 12em;
+    margin-bottom: 5em;
 }
 .story-part{
     column-gap: 5em;
-    margin-bottom: 12em;
+    margin-bottom: 5em;
 }
 .fight-part {
     column-gap: 5em;
@@ -156,14 +163,16 @@ main p {
     padding-bottom: 5em;
 }
 .note {
-    background-color: rgb(48, 32, 32);
+    background-image: var(--linear-gradient1);
     margin-bottom: 3em;
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
     border-radius: 3em;
-    color: rgb(51, 49, 49);
     border: 2px solid rgb(90, 33, 33);
+}
+.note h1 {
+    color: rgb(228, 228, 228);
 }
 .guild {
     padding-bottom: 12em;
@@ -194,6 +203,10 @@ main p {
 .guild2 {
     width: 10em;
 }
+.guild7 {
+    width: 14em;
+    top: -7.7em;
+}
 .guild3 {
     top: -6em;
 }
@@ -213,8 +226,7 @@ main p {
     height: 40em;
 }
 .guild6 {
-    top: -10em;
-    width: 15em;
+    top: -9.6em;
 }
 .theme {
     position: fixed;
@@ -273,4 +285,220 @@ main p {
 #light-mode:checked ~ .container main .guild-detaills{
     background-color: rgb(243, 242, 242);
     border: 5px solid rgb(223, 219, 219);
+}
+#light-mode:checked ~ .container main .link-trailer {
+    background-color: rgb(190, 190, 190);
+}
+#light-mode:checked ~ .container main .link-trailer:hover {
+    background-color: rgb(179, 179, 179);
+}
+.new-release-heading {
+    width: 100%;
+    margin-bottom: -3em;
+}
+.new-release-info {
+    margin-bottom: 3em;
+}
+.new-release-info p{
+    width: 29em;
+    margin-right: 2em;
+}
+.new-release-image {
+    width: 10em;
+    height: 12em;
+}
+.margin-top {
+    margin-top: -3.5em;
+}
+.timmer {
+    width: 100%;
+    color: transparent;
+    background-image: var(--linear-gradient);
+    background-clip: text;
+}
+.info-heading {
+    margin-top: 2em;
+}
+.trailer-detaill {
+    margin-bottom: 1em;
+}
+.link-container {
+    width: 100%;
+ }
+.link-trailer {
+    background-image: var(--linear-gradient);
+    color: rgb(235, 235, 235);
+    padding: 1em 3em;
+    border-radius: 0.5em;
+    animation: rotate;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.link-trailer:hover {
+    background-color: var(--trailer-link-hover-bg);
+}
+@keyframes rotate {
+    0%{
+       transform: rotate(-2deg); 
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+    
+}
+.season-container {
+    gap: 5em;
+}
+.season-heading {
+    /* margin-top: -4em; */
+    margin-bottom: 2em;
+}
+#light-mode:checked ~ .container main .seasons-detaill {
+    border: 3px solid var(--sidebar-bordercolor-light);
+}
+#light-mode:checked ~ .container main .My-list {
+    border: 3px solid var(--sidebar-bordercolor-light);
+}
+.seasons-detaill {
+    min-height: 25em;
+    border: 3px solid var(--dark-season-menu);
+    border-radius: 1em;
+    padding: 3em;
+}
+.seasons-detaill h1{
+    margin-bottom: 1em;
+}
+.My-list {
+    min-height: 15em;
+    border: 3px solid var(--dark-season-menu);
+    border-radius: 1em;
+    padding: 3em;
+}
+.season-name-container,.season-name-list-container {
+    flex-grow: 1;
+    width: 100%;
+    position: relative;
+}
+.season-name-container {
+    gap: 2em;
+}
+.season-img {
+    width: 21em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-bottom: 1em;
+    /* height: 12em; */
+}
+.season-name {
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#light-mode:checked ~ .container main .season-name-list {
+    border: 3px solid var(--sidebar-bordercolor-light);
+}
+.season-name-list {
+    border: 3px solid var(--sidebar-bordercolor);
+    border-radius: 1em;
+    height: 20em;
+    text-align: center;
+    position: relative;
+}
+.add-watch-list-btn,.watch-btn{
+    padding: 0.5em 2em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    background-image: var(--linear-gradient);
+    color: rgb(230, 230, 230);
+}
+.add-watch-list-btn {
+    position: absolute;
+    bottom: 1em;
+}
+.add-watch-list-btn:hover,.watch-btn:hover {
+    background-image: var(--linear-gradient);
+}
+.added-list {
+    background-image: var(--linear-gradient);
+    background-clip: text;
+    color: transparent;
+    padding: 0.4em 4em;
+    border-radius: 0.2em;
+    position: absolute;
+    bottom: 1em;
+}
+.empty-p {
+    color: var(--my-list-color-dark);
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+.name-s {
+    text-decoration-line:line-through;
+    color: rgb(78, 78, 78);
+}
+.dull-btn {
+    background-color: transparent;
+    background-image: var(--linear-gradient);
+    background-clip: text;
+    color: transparent;
+    padding: 0.5em 1.5em;
+}
+#light-mode:checked ~ .container main .foam {
+    border: 3px solid var(--sidebar-bordercolor-light);
+}
+.foam {
+    width: 100%;
+    min-height: 10em;
+    padding: 3em;
+    border: 3px solid var(--sidebar-bordercolor);
+    border-radius: 1em;
+    position: relative;
+}
+#light-mode:checked ~ .container main .foam .input {
+    color: rgb(31, 31, 31);
+    background-color: var(--sidebar-bordercolor-light);
+}
+.input {
+    background-color: var(--sidebar-bordercolor);
+    padding: 0.3em 1em;
+    color: rgb(224, 224, 224);
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 1em;
+    width: 48%;
+}
+.name {
+    margin-right: 1em;
+}
+#light-mode:checked ~ .container main .foam .textarea {
+    background-color: var(--sidebar-bordercolor-light);
+}
+.textarea {
+    background-color: var(--sidebar-bordercolor);
+    padding: 0.3em 1em;
+    border-radius: 2px;
+    outline: none;
+    width: 98.8%;
+    margin-bottom: 0.7em;
+}
+#light-mode:checked ~ .container main .foam .submit-btn {
+    color: rgb(24, 24, 24);
+}
+.submit-btn {
+    padding: 0.4em 2em;
+    border-radius: 3px;
+    color: inherit;
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+    font-weight: bold;
+    background-image: var(--linear-gradient);
+}
+.label2 {
+    position: absolute;
+    top: 3em;
 }
