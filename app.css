@@ -50,6 +50,14 @@ header h1 {
     color: transparent;
     background-image: var(--linear-gradient);
     background-clip: text;
+    
+}
+video {
+    border-radius: 1em;
+    margin-top: 2em;
+}
+header h1:hover {
+    transform: scale(1.1);
 }
 .logo {
     width: 10em;
@@ -190,6 +198,9 @@ main p {
     padding: 2em;
     border: 5px solid rgb(39, 39, 39);
 }
+.guild-detaills:hover {
+    transform: scale(1.1);
+}
 .guild-img {
     /* margin-top: -13em; */
     width: 18em;
@@ -236,6 +247,22 @@ main p {
     padding-top: 1em;
     padding-bottom: 3.5em;
     border-radius: 50%;
+    color: transparent;
+    background-image: var(--linear-gradient);
+    background-clip: text;
+    animation: changing-color;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes changing-color {
+    100% {
+        background-image: var(--linear-gradient1);
+    }
+    
+}
+img:hover {
+    transform: scale(1.1);
 }
 .dark-mode {
     position: fixed;
@@ -325,29 +352,6 @@ main p {
 .link-container {
     width: 100%;
  }
-.link-trailer {
-    background-image: var(--linear-gradient);
-    color: rgb(235, 235, 235);
-    padding: 1em 3em;
-    border-radius: 0.5em;
-    animation: rotate;
-    animation-duration: 0.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-}
-.link-trailer:hover {
-    background-color: var(--trailer-link-hover-bg);
-}
-@keyframes rotate {
-    0%{
-       transform: rotate(-2deg); 
-    }
-    100%{
-        transform: rotate(2deg);
-    }
-    
-}
 .season-container {
     gap: 5em;
 }
@@ -391,6 +395,9 @@ main p {
     margin-bottom: 1em;
     /* height: 12em; */
 }
+.season-img:hover {
+    transform: scale(1);
+}
 .season-name {
     justify-content: space-between;
     align-items: center;
@@ -419,8 +426,12 @@ main p {
     position: absolute;
     bottom: 1em;
 }
-.add-watch-list-btn:hover,.watch-btn:hover {
-    background-image: var(--linear-gradient);
+.add-watch-list-btn:hover {
+    background-image: var(--linear-gradient1);
+}
+.watch-btn:hover {
+    background-image: var(--linear-gradient1);
+    transform: scale(1.1);
 }
 .added-list {
     background-image: var(--linear-gradient);
@@ -472,7 +483,7 @@ main p {
     margin-bottom: 1em;
     width: 48%;
 }
-.name {
+.name ,.event-name{
     margin-right: 1em;
 }
 #light-mode:checked ~ .container main .foam .textarea {
@@ -489,7 +500,7 @@ main p {
 #light-mode:checked ~ .container main .foam .submit-btn {
     color: rgb(24, 24, 24);
 }
-.submit-btn {
+.submit-btn,.submit1-btn {
     padding: 0.4em 2em;
     border-radius: 3px;
     color: inherit;
@@ -498,7 +509,96 @@ main p {
     font-weight: bold;
     background-image: var(--linear-gradient);
 }
+.submit-btn:hover ,.submit1-btn:hover{
+    transform: scale(1.05);
+}
 .label2 {
     position: absolute;
     top: 3em;
+}
+.season-name-list:hover {
+    overflow: visible;
+    transform: scale(1.1);
+}
+.foam1 {
+    width: 100%;
+    min-height: 10em;
+    padding: 3em;
+    margin-top: 2em;
+    border: 3px solid var(--sidebar-bordercolor);
+    border-radius: 1em;
+    position: relative;
+}
+.label4 {
+    position: absolute;
+    top: 3em;
+    
+}
+.label6 {
+    position: absolute;
+    top: 13.6em;
+}
+.input1 {
+    background-color: var(--sidebar-bordercolor);
+    padding: 0.3em 1em;
+    color: rgb(224, 224, 224);
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 1em;
+    width: 48%;
+}
+.description {
+    background-color: var(--sidebar-bordercolor);
+    padding: 0.3em 1em;
+    border-radius: 2px;
+    outline: none;
+    width: 98.8%;
+    margin-bottom: 0.7em;
+}
+.file {
+    position: absolute;
+    top: 7em;
+    right: 0em;
+    border: 3px solid var(--sidebar-bordercolor);
+    padding: 0.3em 1em;
+    margin-right: 1em;
+}
+.custom-upload {
+    position: absolute;
+    top: 7em;
+    right: 8em;
+}
+.video-container {
+    margin-top: 2em;
+    width: 100%;
+    height: 315px;
+
+}
+iframe {
+    border-radius: 10px;
+}
+.image-container {
+    width: 10px;
+    height: 20px;
+    color: gray;
+
+}
+#upload {
+    top: 4.6em;
+    right: 2.5em;
+    position: absolute;
+    height: 100px;
+    width: 270px;
+    color: transparent;
+}
+.upload-img {
+    height: 100%;
+
+
+}
+.upload-img:hover {
+    transform: scale(1);
+}
+.invisible {
+    display: none;
 }

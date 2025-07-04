@@ -491,7 +491,9 @@ Fairy Tail: 100 Years Quest is just 5 hours and 30 minutes away, and the adventu
 ${hour} hour : ${min} min : ${sec} sec</div>
 <h1 class="info-heading intro font-bold text-3xl">Watch Trailor :</h1>
 <div class="text-center trailer-detaill">Fairy Tail: 100 Years Quest explodes into action as Natsu and his team take on a mission no mage has ever completed! From facing the legendary Five Dragon Gods to unlocking ancient powers and uncovering dark secrets, this new journey is filled with intense battles, powerful magic, and unforgettable moments. With jaw-dropping animation and the entire Fairy Tail crew back in action, the adventure reaches a whole new level. Watch the official trailer now and dive into the magic of 100 Years Quest!</div>
-<div class="flex justify-center items-center link-container"><a class="link-trailer" href="http://youtube.com/watch?v=n2ksbv94ONo" target="_blank">Click here</a></div>
+<div class="video-container flex justify-center items-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n2ksbv94ONo?si=iez5estFkNRi3_or" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 `;
 let contact=`
 <div class="contact flex justify-center items-center"><h1 class="intro font-bold 
@@ -501,17 +503,85 @@ text-4xl">Contact us</h1></div>
 <label for="name" class="font-bold text-1xl">Name :</label>
 <br>
 <input id="name" class="input name" type="text" placeholder="Name" name="name" required>
-<label for="name" class="label2 font-bold text-1xl">Email :</label>
-<input id="email" class="input email" type="email" placeholder="Email" email="email" required>
+<label for="email" class="label2 font-bold text-1xl">Email :</label>
+<input id="email" class="input email" type="email" placeholder="Email" name="email" required>
 <br>
-<label for="name" class="font-bold text-1xl">Message :</label>
+<label for="message" class="font-bold text-1xl">Message :</label>
 <br>
-<textarea id="message" class="textarea" type="textarea" rows="5" placeholder="Message" message="message" required></textarea>
+<textarea id="message" class="textarea" type="textarea" rows="5" placeholder="Message" name="message" required></textarea>
 <br>
 <button class="submit-btn">Submit<button>
 </div>
 </foam>
 `;
+let eventFoam=`
+<div class="contact flex justify-center items-center"><h1 class="intro font-bold 
+text-4xl">🌟 Welcome to the Fairy Tail Festival!</h1></div>
+<div class="text-2xl text-center">Unleash the Magic — Join the Guild!</div>
+<br>
+<div class="text-center">Step into the world of Fairy Tail, where magic, adventure, and friendship collide!
+Celebrate your favorite wizards with cosplay, anime screenings, guild games, trivia battles, and more.
+Whether you're a Dragon Slayer or a Celestial Spirit Mage, this is your guild’s ultimate gathering!
+
+🪄 Live Events • 🎭 Cosplay Contest • 🎤 Voice Acting • 🛍️ Merch Stalls • 📸 Magic Photo Booth
+</div>
+<foam>
+<div class="foam1 flex flex-col">
+<label for="event-name" class="label4 font-bold text-1xl">Event Name :</label>
+<br>
+<input id="event-name" class="input1 event-name" type="text" placeholder="Event Name" name="event-name" 
+required>
+<label for="date" class="label5 font-bold text-1xl">Date :</label>
+<input id="date" class="input1 date" type="date" placeholder="Email" name="date" 
+required>
+<br>
+<label for="description" class="label6 font-bold text-1xl">Description :</label>
+<br>
+<textarea id="description" class="description" type="textarea" rows="5" 
+placeholder="Description" name="description" required></textarea>
+<br>
+<button class="submit1-btn">Submit<button>
+<label for="upload" class="custom-upload">📸 Upload Image</label>
+<input id="upload" class="file" type="file" accept=".jpg, .jpeg, .png">
+</div>
+<foam>
+`;
+let eventFoams= {
+    eventName: JSON.parse(localStorage.getItem('eventName'))||[],
+    date: JSON.parse(localStorage.getItem('date'))||[],
+    description: JSON.parse(localStorage.getItem('description'))||[],
+    images: JSON.parse(localStorage.getItem('images'))||[]
+}
+document.querySelector('.eventfoam').addEventListener('click' ,()=>{
+    document.querySelector('main').innerHTML=eventFoam;
+    clearInterval(id);
+    document.querySelector('.file').addEventListener("change", () => {
+        const files = document.querySelector('.file').files;
+        const reader = new FileReader();
+        reader.onload = function () {
+            eventFoams.images.push(reader.result); 
+            images(reader);
+            console.log(eventFoams.images);
+        }
+        reader.readAsDataURL(files[0]);
+    });
+    function images(reader) {
+            document.getElementById('upload').outerHTML= `
+            <div id="upload" class="flex justify-center"><img class="upload-img" src="${reader.result}" height="50%"></div>
+            `;
+            document.querySelector('.custom-upload').classList.add('invisible');
+        }
+    document.querySelector('.submit1-btn').addEventListener('click',()=>{
+        eventFoams.eventName.push(document.querySelector(".event-name").value);
+        eventFoams.date.push(document.querySelector(".date").value);
+        eventFoams.description.push(document.querySelector(".description").value);
+        localStorage.setItem("images", JSON.stringify(eventFoams.images));
+        localStorage.setItem("description", JSON.stringify(eventFoams.description));
+        localStorage.setItem("eventName", JSON.stringify(eventFoams.eventName));
+        localStorage.setItem("date", JSON.stringify(eventFoams.date));
+        console.log(eventFoams);
+    });
+});
 let information={
     name: JSON.parse(localStorage.getItem("name"))||[],
     email: JSON.parse(localStorage.getItem("email"))||[],
@@ -529,11 +599,9 @@ document.querySelector('.Contact').addEventListener('click' ,()=>{
             localStorage.setItem("email", JSON.stringify(information.email));
             localStorage.setItem("message", JSON.stringify(information.message));
             console.log(information);
-            
-
-        }else {
-            console.log(false);
+            console.log(document.getElementById('message').value);
         }
+
     });
 });
 document.querySelector('.about').addEventListener('click' ,()=>{
@@ -604,7 +672,6 @@ document.querySelector('.season').addEventListener('click' ,()=>{
         `;
         document.querySelectorAll('.watch-btn').forEach((button)=>{
             button.addEventListener('click', ()=>{
-                console.log(button.dataset.watchid);
                 document.getElementById(`${button.dataset.watchid}-watch`).classList.add('name-s');
                 watchedid.push(button.dataset.watchid);
                 document.getElementById(`${button.dataset.watchid}-watchbtn`).outerHTML=`<button class="dull-btn" id="${button.dataset.watchedid}-watchbtn" data-watchid='${button.dataset.watchedid}'>Watched</button>`;

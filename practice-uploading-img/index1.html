@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app1.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="app">
+        <div class="header">
+            <h2>Uppload Images</h2>
+            <div class="server-message"></div>
+        </div>
+        <div class="input-div">
+            <p>Drag & drop images here or <span class="browse">Browse</span></p>
+            <input type="file" class="file" multiple="multiple" accept="images/png, images/jpeg, images/jpg">
+        </div>
+        <form id="queued-form">
+            <div class="header">
+                <h3>Queued In Frontend</h3>
+                <button type="submit">Upload</button>
+            </div>
+            <div class="queued-div"></div>
+        </form>
+
+    </main>
+<script>
+    // 🔁 Load saved images (Base64 strings) from localStorage
+    let queuedImageArray = JSON.parse(localStorage.getItem("queuedImageArray")) || [];
+
+    // 🌐 DOM elements
+    const input = document.querySelector(".input-div input"),
+          queuedDiv = document.querySelector(".queued-div");
+
+    // 📥 Handle image upload (input file change)
+    input.addEventListener("change", () => {
+        const files = input.files;
+
+        for (let i = 0; i < files.length; i++) {
+            const reader = new FileReader();
+
+            // 🧠 Convert to Base64 and save
+            reader.onload = function () {
+                queuedImageArray.push(reader.result); // base64 image string
+                localStorage.setItem("queuedImageArray", JSON.stringify(queuedImageArray));
+                displayQueuedImages();
+            };
+
+            reader.readAsDataURL(files[i]); // convert file to Base64
+        }
+
+        input.value = ""; // reset input
+    });
+
+    // 🖼️ Display all queued images
+    function displayQueuedImages() {
+        let html = "";
+        queuedImageArray.forEach((image, index) => {
+            html += `
+                <div class="images">
+                    <img src="${image}" alt="image">
+                    <span onclick="deleteQueuedImage(${index})">&times;</span>
+                </div>`;
+        });
+        queuedDiv.innerHTML = html;
+    }
+
+    // ❌ Delete one image
+    function deleteQueuedImage(index) {
+        queuedImageArray.splice(index, 1);
+        localStorage.setItem("queuedImageArray", JSON.stringify(queuedImageArray));
+        displayQueuedImages();
+    }
+
+    // ▶️ Show stored images on page load
+    displayQueuedImages();
+</script>
+
+</body>
+</html>
