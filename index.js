@@ -542,34 +542,55 @@ placeholder="Description" name="description" required></textarea>
 <br>
 <button class="submit1-btn">Submit<button>
 <label for="upload" class="custom-upload">📸 Upload Image</label>
+<h1 class="message-img font-bold">You can maximium upload <span class="counting">5</span> more images</h1>
 <input id="upload" class="file" type="file" accept=".jpg, .jpeg, .png">
+<div class="upload-img-container grid grid-cols-3 justify-center items-center"></div>
 </div>
 <foam>
 `;
+let count=0;
 let eventFoams= {
     eventName: JSON.parse(localStorage.getItem('eventName'))||[],
     date: JSON.parse(localStorage.getItem('date'))||[],
     description: JSON.parse(localStorage.getItem('description'))||[],
-    images: JSON.parse(localStorage.getItem('images'))||[]
+    images: JSON.parse(localStorage.getItem('images'))||[],
+    imagesCount: JSON.parse(localStorage.getItem('imagesCount'))||[]
 }
-document.querySelector('.eventfoam').addEventListener('click' ,()=>{
+document.querySelector('#event').addEventListener('change' ,()=>{
+    if(document.querySelector('#event').options[document.querySelector('#event').selectedIndex].text=='Event Form'){
     document.querySelector('main').innerHTML=eventFoam;
     clearInterval(id);
     document.querySelector('.file').addEventListener("change", () => {
+        
         const files = document.querySelector('.file').files;
-        const reader = new FileReader();
-        reader.onload = function () {
-            eventFoams.images.push(reader.result); 
-            images(reader);
-            console.log(eventFoams.images);
+        console.log(files);
+        for (let i = 0; i < files.length; i++) {
+            
+            const reader = new FileReader();
+            reader.onload = function () {
+                    eventFoams.images.push(reader.result); 
+                    count++;
+                    images(reader,count);
+                    console.log(eventFoams.images);
+            }
+            reader.readAsDataURL(files[i]);
         }
-        reader.readAsDataURL(files[0]);
+        
+        document.querySelector('.file').value = ""; 
+    
     });
-    function images(reader) {
-            document.getElementById('upload').outerHTML= `
-            <div id="upload" class="flex justify-center"><img class="upload-img" src="${reader.result}" height="50%"></div>
+    function images(reader,count) {
+            document.querySelector('.upload-img-container').innerHTML+=`
+            <img class="upload-img" src="${reader.result}">
+            
             `;
-            document.querySelector('.custom-upload').classList.add('invisible');
+            if(count<5){
+                document.querySelector('.counting').innerHTML=`${5-count}`;
+            }
+            if(count==5){
+                document.querySelector('.counting').innerHTML=`no`;
+                document.querySelector('.file').outerHTML=``;
+            }
         }
     document.querySelector('.submit1-btn').addEventListener('click',()=>{
         eventFoams.eventName.push(document.querySelector(".event-name").value);
@@ -579,8 +600,12 @@ document.querySelector('.eventfoam').addEventListener('click' ,()=>{
         localStorage.setItem("description", JSON.stringify(eventFoams.description));
         localStorage.setItem("eventName", JSON.stringify(eventFoams.eventName));
         localStorage.setItem("date", JSON.stringify(eventFoams.date));
+        eventFoams.imagesCount.push(count);
+        localStorage.setItem("imagesCount",JSON.stringify(eventFoams.imagesCount));
+        count=0;
         console.log(eventFoams);
     });
+}
 });
 let information={
     name: JSON.parse(localStorage.getItem("name"))||[],
